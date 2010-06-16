@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property_name} = db.BooleanProperty()</string>
+	<string>${1:property_name} = db.BooleanProperty(${2:default=${3:True}})</string>
 	<key>name</key>
 	<string>db.BooleanProperty</string>
 	<key>scope</key>
