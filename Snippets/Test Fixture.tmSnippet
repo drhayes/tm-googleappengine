@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#! /usr/bin/env python2.5
+
+from google.appengine.api import apiproxy_stub_map 
+from google.appengine.api import datastore_file_stub 
+from google.appengine.api import mail_stub 
+from google.appengine.api import urlfetch_stub 
+from google.appengine.api import user_service_stub 
+from google.appengine.ext import db
+from google.appengine.api import users
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp import template
+
+import uuid
+import os
+import cgi
+import wsgiref.handlers
+import logging
+import unittest
+import time
+
+APP_ID = u'app_id'
+AUTH_DOMAIN = 'gmail.com' 
+LOGGED_IN_USER = 't...@example.com'  # set to '' for no logged in user
+
+class Test$1(unittest.TestCase):
+  def setUp(self):
+    # Ensure we're in UTC. 
+    os.environ['TZ'] = 'UTC'
+    os.environ['APPLICATION_ID'] = APP_ID
+    time.tzset()
+    # Start with a fresh api proxy.
+    apiproxy_stub_map.apiproxy = apiproxy_stub_map.APIProxyStubMap()
+    # Use a fresh stub datastore.
+    stub = datastore_file_stub.DatastoreFileStub(APP_ID, '/dev/null', '/dev/null')
+    apiproxy_stub_map.apiproxy.RegisterStub('datastore_v3', stub)
+    # Use a fresh stub UserService.
+    apiproxy_stub_map.apiproxy.RegisterStub('user', user_service_stub.UserServiceStub())
+    os.environ['AUTH_DOMAIN'] = AUTH_DOMAIN
+    os.environ['USER_EMAIL'] = LOGGED_IN_USER
+    # Use a fresh urlfetch stub.
+    apiproxy_stub_map.apiproxy.RegisterStub('urlfetch', urlfetch_stub.URLFetchServiceStub())
+    # Use a fresh mail stub.
+    apiproxy_stub_map.apiproxy.RegisterStub('mail', mail_stub.MailServiceStub())
+    self.current_user = users.get_current_user()
+
+$0
+
+if __name__ == '__main__':
+  unittest.main()
+</string>
+	<key>name</key>
+	<string>Test Fixture</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>gaefixture</string>
+	<key>uuid</key>
+	<string>11E7A54F-36D7-4D89-A4DF-DD22DA301408</string>
+</dict>
+</plist>

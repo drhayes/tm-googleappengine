@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:property_name} = db.ReferenceProperty(${2:ClassName})</string>
+	<key>name</key>
+	<string>db.ReferenceProperty</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>dbref</string>
+	<key>uuid</key>
+	<string>759B7A31-0572-423D-B1D0-A09E86909E47</string>
+</dict>
+</plist>

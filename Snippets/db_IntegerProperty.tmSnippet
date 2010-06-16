@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:property_name} = db.IntegerProperty(${2:default=${3:0}})</string>
+	<key>name</key>
+	<string>db.IntegerProperty</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>dbint</string>
+	<key>uuid</key>
+	<string>B77752E6-6C29-4FC3-89B9-A4EE6C8E9DC6</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:property_name} = db.BooleanProperty()</string>
+	<key>name</key>
+	<string>db.BooleanProperty</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>dbbool</string>
+	<key>uuid</key>
+	<string>FFB598E7-9C7E-46DD-85F8-50175E38CCF8</string>
+</dict>
+</plist>
