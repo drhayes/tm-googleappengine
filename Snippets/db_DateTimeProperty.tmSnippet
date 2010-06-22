@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def test_${1:name_of_test}(self):
-	${0:self.fail()}</string>
+	<string>${1:property_name} = db.DateTimeProperty(${2:auto_now=${3:True}})</string>
 	<key>name</key>
-	<string>Test Case</string>
+	<string>db.DateTimeProperty</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>test</string>
+	<string>dbdatetime</string>
 	<key>uuid</key>
-	<string>8924F1A2-2CDA-4449-9D62-5FBA3D3EC89C</string>
+	<string>C4B8CD36-DADE-4529-B567-04FF38E72F52</string>
 </dict>
 </plist>
